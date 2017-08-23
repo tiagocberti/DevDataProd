@@ -16,6 +16,7 @@ shinyUI(fluidPage(
     
     # Show a plot of the data and linear regression
     mainPanel(
+      h4("Select a Tree in the side panel and look at the data and the linear model"),
       h3("Linear Model:"),
       plotOutput("distPlot"))
   )))
