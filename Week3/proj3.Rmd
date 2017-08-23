@@ -1,0 +1,19 @@
+---
+title: "Developing Data Products - Week 3"
+author: "Tiago Berti"
+date: "August 20th, 2017"
+output: ioslides_presentation
+---
+
+## Dataset Orange
+
+Oranges circunference x Age (identified by tree)
+```{r datasets, echo=FALSE,message=FALSE}
+library(plotly,quietly = TRUE,verbose=FALSE)
+data(Orange)
+my_plot <- plot_ly(Orange,x=~age,y=~circumference,type = "scatter",mode='markers',color = ~Tree, size = ~circumference)
+```
+```{r, echo=FALSE, warning=FALSE}
+my_plot
+```
+

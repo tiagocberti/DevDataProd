@@ -1,0 +1,22 @@
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## My slide presentation
+Porto Alegre - Brazil 
+Tiago Berti
+August 15th, 2017
+
+```{r, warning=FALSE}
+require(leaflet)
+df <-  data.frame(lat = runif(20, min = -30.1, max = -30.0),
+                 lng = runif(20, min = -51.2, max = -51.1))
+
+df %>%
+  leaflet() %>%
+  addTiles() %>%
+  addMarkers() %>% 
+  addProviderTiles(providers$OpenStreetMap)
+
+```
+
