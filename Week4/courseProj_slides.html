@@ -97,9 +97,9 @@
           </hgroup>
   </slide>
 
-<slide class=''><hgroup><h2>Storm Database Explorer</h2></hgroup><article  id="storm-database-explorer">
+<slide class=''><hgroup><h2>Orange Database Linear Model per Tree</h2></hgroup><article  id="orange-database-linear-model-per-tree">
 
-<p><a href='https://tiagocberti.shinyapps.io/DevDataProd_project' title=''>shinyapp</a> This presentation is being created as part of the peer assessment for the coursera developing data products class. The assignment is geared toward ensuring the following concepts were well understood by the students</p>
+<p>This presentation is being created as part of the peer assessment for the coursera developing data products class. The assignment is geared toward ensuring the following concepts were well understood by the students</p>
 
 <ul>
 <li><strong>shiny</strong> to build data product application</li>
@@ -108,25 +108,30 @@
 
 </article></slide><slide class=''><hgroup><h2>The Application</h2></hgroup><article  id="the-application">
 
-<p>To display the understanding of using <strong>shiny</strong> to build an application, a simple application called <strong>Storm Database Explorer</strong> has been developed and deployed at: <a href='https://senthilkumar-k.shinyapps.io/DevDataProd-CourseProject/' title=''>https://senthilkumar-k.shinyapps.io/DevDataProd-CourseProject/</a></p>
+<p>To display the understanding of using <strong>shiny</strong> to build an application, a very simple application called <strong>Orange Dataset Linear Model</strong> has been developed and deployed at: <a href='https://tiagocberti.shinyapps.io/DevDataProd_project/' title=''>https://tiagocberti.shinyapps.io/DevDataProd_project/</a></p>
 
-<p>The application allows the user to: - Select the inputs like- the range of years, types of events. - Select the output to be displayed on the map, or as a graph, or as a table - Also has a option to download the filtered data.</p>
+<p>The application allows the user to: - Select the input as the tree to subset the dataset; - View the plot of the data and the linear model associated; - View the formula of the linear regression.</p>
 
 </article></slide><slide class=''><hgroup><h2>The Data</h2></hgroup><article  id="the-data">
 
-<p>This application is based on the U.S. National Oceanic and Atmospheric Administration&#39;s (NOAA) storm database.</p>
+<p>This application is based on Orange dataset from the package datasets.</p>
 
-<p>Dataset has been obtained from <a href='https://d396qusza40orc.cloudfront.net/repdata%2Fdata%2FStormData.csv.bz2' title=''>here</a> and processed for the course project. This is the same file we used for the Cousera&#39;s Reproducible Research Course.</p>
+<p>Source code for the project is available on the <a href='https://github.com/tiagocberti/DevDataProd/tree/master/Week4/ShinyProj' title=''>GitHub</a>.</p>
 
-<p>Source code for the project is available on the <a href='https://github.com/Senthilkumar-k/DevDataProd-CourseProject' title=''>GitHub</a>.</p>
+<p>The application can be found at: <a href='https://tiagocberti.shinyapps.io/DevDataProd_project' title=''>shinyapp</a></p>
 
 </article></slide><slide class=''><hgroup><h2>Data</h2></hgroup><article  id="data">
 
-<p>Read Data</p>
-
 <pre class = 'prettyprint lang-r'>library(data.table)
-#dt &lt;- fread(&#39;events.agg.csv&#39;)
-#head(dt)</pre></article></slide>
+head(Orange)</pre>
+
+<pre >##   Tree  age circumference
+## 1    1  118            30
+## 2    1  484            58
+## 3    1  664            87
+## 4    1 1004           115
+## 5    1 1231           120
+## 6    1 1372           142</pre></article></slide>
 
 
   <slide class="backdrop"></slide>
